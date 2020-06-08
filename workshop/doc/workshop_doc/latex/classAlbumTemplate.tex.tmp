@@ -1,0 +1,89 @@
+\hypertarget{classAlbumTemplate}{}\section{Album\+Template Class Reference}
+\label{classAlbumTemplate}\index{Album\+Template@{Album\+Template}}
+
+
+Inheritance diagram for Album\+Template\+:
+% FIG 0
+
+
+Collaboration diagram for Album\+Template\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlbumTemplate_abf97ac8a25c624271f9eae38fff18b40}{get\+Format} ()
+\item 
+\hyperlink{classAlbumTemplate_ad63eb01bcdc53fdaacd9e81e3639d956}{set\+Format} (\$format)
+\item 
+\hyperlink{classAlbumTemplate_aed8268a410e52830aaa642f7b2475c15}{get\+Size} ()
+\item 
+\hyperlink{classAlbumTemplate_a4ce69f7b4ec652b84913443ee6564490}{set\+Size} (\$size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlbumTemplate_a4a1fa5e9718b8d9566cc5421510dec3e}{hydrate} (\$datas)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classAlbumTemplate}{Album\+Template} Grouping additional data specific to the templates of photo albums 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAlbumTemplate_abf97ac8a25c624271f9eae38fff18b40}\label{classAlbumTemplate_abf97ac8a25c624271f9eae38fff18b40}} 
+\index{Album\+Template@{Album\+Template}!get\+Format@{get\+Format}}
+\index{get\+Format@{get\+Format}!Album\+Template@{Album\+Template}}
+\subsubsection{\texorpdfstring{get\+Format()}{getFormat()}}
+{\footnotesize\ttfamily Album\+Template\+::get\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the album template\textquotesingle{}s format \begin{DoxyReturn}{Returns}
+string the album template\textquotesingle{}s format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlbumTemplate_aed8268a410e52830aaa642f7b2475c15}\label{classAlbumTemplate_aed8268a410e52830aaa642f7b2475c15}} 
+\index{Album\+Template@{Album\+Template}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Album\+Template@{Album\+Template}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily Album\+Template\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the album template\textquotesingle{}s size \begin{DoxyReturn}{Returns}
+string the album template\textquotesingle{}s size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlbumTemplate_a4a1fa5e9718b8d9566cc5421510dec3e}\label{classAlbumTemplate_a4a1fa5e9718b8d9566cc5421510dec3e}} 
+\index{Album\+Template@{Album\+Template}!hydrate@{hydrate}}
+\index{hydrate@{hydrate}!Album\+Template@{Album\+Template}}
+\subsubsection{\texorpdfstring{hydrate()}{hydrate()}}
+{\footnotesize\ttfamily Album\+Template\+::hydrate (\begin{DoxyParamCaption}\item[{}]{\$datas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Hydration function 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$datas} & array of data retrieved from the database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAlbumTemplate_ad63eb01bcdc53fdaacd9e81e3639d956}\label{classAlbumTemplate_ad63eb01bcdc53fdaacd9e81e3639d956}} 
+\index{Album\+Template@{Album\+Template}!set\+Format@{set\+Format}}
+\index{set\+Format@{set\+Format}!Album\+Template@{Album\+Template}}
+\subsubsection{\texorpdfstring{set\+Format()}{setFormat()}}
+{\footnotesize\ttfamily Album\+Template\+::set\+Format (\begin{DoxyParamCaption}\item[{}]{\$format }\end{DoxyParamCaption})}
+
+Affects the album template\textquotesingle{}s format 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & the album template\textquotesingle{}s format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAlbumTemplate_a4ce69f7b4ec652b84913443ee6564490}\label{classAlbumTemplate_a4ce69f7b4ec652b84913443ee6564490}} 
+\index{Album\+Template@{Album\+Template}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Album\+Template@{Album\+Template}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily Album\+Template\+::set\+Size (\begin{DoxyParamCaption}\item[{}]{\$size }\end{DoxyParamCaption})}
+
+Affects the album template\textquotesingle{}s size 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$size} & the album template\textquotesingle{}s size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/class/Album\+Template.\+class.\+php\end{DoxyCompactItemize}

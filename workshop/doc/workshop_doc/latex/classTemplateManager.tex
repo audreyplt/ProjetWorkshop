@@ -1,0 +1,131 @@
+\hypertarget{classTemplateManager}{}\section{Template\+Manager Class Reference}
+\label{classTemplateManager}\index{Template\+Manager@{Template\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTemplateManager_a12dabaa21a3a27bc84296627df2d6349}{get} (\$ref, \$type)
+\item 
+\hyperlink{classTemplateManager_a387cb638f6a35fe5db4786e35502ae8d}{get\+All} (\$type)
+\item 
+\hyperlink{classTemplateManager_a32ada078a7364af82f6ffad464362164}{add} (\$template)
+\item 
+\hyperlink{classTemplateManager_a131e2efc260d40bbf939dc11676ddf98}{update} (\$template)
+\item 
+\hyperlink{classTemplateManager_a6ef7f84fdea7c33b88e4a11df061ff32}{delete} (\$template)
+\item 
+\hyperlink{classTemplateManager_a51e5e8c435403032aaada0ebdb846070}{get\+For\+User} (\$user)
+\item 
+\hyperlink{classTemplateManager_add74211b79e636840d1ce1de348d1036}{get\+Filtered} (\$type, \$keywords, \$topics, \$rate\+Min, \$formats, \$sizes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classTemplateManager}{Template\+Manager} The manager between the database and the class \hyperlink{classTemplate}{Template} (and the differents inherited classes). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemplateManager_a32ada078a7364af82f6ffad464362164}\label{classTemplateManager_a32ada078a7364af82f6ffad464362164}} 
+\index{Template\+Manager@{Template\+Manager}!add@{add}}
+\index{add@{add}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Template\+Manager\+::add (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Add a new template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} & {\em \$template} & the template to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTemplateManager_a6ef7f84fdea7c33b88e4a11df061ff32}\label{classTemplateManager_a6ef7f84fdea7c33b88e4a11df061ff32}} 
+\index{Template\+Manager@{Template\+Manager}!delete@{delete}}
+\index{delete@{delete}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Template\+Manager\+::delete (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Deletes an existing template from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the template to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTemplateManager_a12dabaa21a3a27bc84296627df2d6349}\label{classTemplateManager_a12dabaa21a3a27bc84296627df2d6349}} 
+\index{Template\+Manager@{Template\+Manager}!get@{get}}
+\index{get@{get}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Template\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$ref,  }\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Returns the template corresponding to the reference and type indicated from the database 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$ref} & the template\textquotesingle{}s reference \\
+\hline
+string & {\em \$type} & the template\textquotesingle{}s type (\hyperlink{classAlbumTemplate}{Album\+Template}, ...) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Template$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplateManager_a387cb638f6a35fe5db4786e35502ae8d}\label{classTemplateManager_a387cb638f6a35fe5db4786e35502ae8d}} 
+\index{Template\+Manager@{Template\+Manager}!get\+All@{get\+All}}
+\index{get\+All@{get\+All}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{get\+All()}{getAll()}}
+{\footnotesize\ttfamily Template\+Manager\+::get\+All (\begin{DoxyParamCaption}\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Returns all the templates for the type indicated 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type of template \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the templates for the type indicated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplateManager_add74211b79e636840d1ce1de348d1036}\label{classTemplateManager_add74211b79e636840d1ce1de348d1036}} 
+\index{Template\+Manager@{Template\+Manager}!get\+Filtered@{get\+Filtered}}
+\index{get\+Filtered@{get\+Filtered}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{get\+Filtered()}{getFiltered()}}
+{\footnotesize\ttfamily Template\+Manager\+::get\+Filtered (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$keywords,  }\item[{}]{\$topics,  }\item[{}]{\$rate\+Min,  }\item[{}]{\$formats,  }\item[{}]{\$sizes }\end{DoxyParamCaption})}
+
+Filtering\+: Returns the templates respecting the different criteria in arguments 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the template\textquotesingle{}s type \\
+\hline
+array & {\em \$keywords} & array for the name search \\
+\hline
+array & {\em \$topics} & restriction on topics \\
+\hline
+float & {\em \$rate\+Min} & restriction on the minimal rate \\
+\hline
+array & {\em \$formats} & restriction on the template\textquotesingle{}s format \\
+\hline
+array & {\em \$sizes} & restriction on the size\textquotesingle{}s format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the templates respecting the different criteria in arguments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplateManager_a51e5e8c435403032aaada0ebdb846070}\label{classTemplateManager_a51e5e8c435403032aaada0ebdb846070}} 
+\index{Template\+Manager@{Template\+Manager}!get\+For\+User@{get\+For\+User}}
+\index{get\+For\+User@{get\+For\+User}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{get\+For\+User()}{getForUser()}}
+{\footnotesize\ttfamily Template\+Manager\+::get\+For\+User (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Returns the templates belonging to the specified user 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the associated user (or id) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the templates belonging to the specified user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplateManager_a131e2efc260d40bbf939dc11676ddf98}\label{classTemplateManager_a131e2efc260d40bbf939dc11676ddf98}} 
+\index{Template\+Manager@{Template\+Manager}!update@{update}}
+\index{update@{update}!Template\+Manager@{Template\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Template\+Manager\+::update (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Updates an existing template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/managers/Template\+Manager.\+class.\+php\end{DoxyCompactItemize}

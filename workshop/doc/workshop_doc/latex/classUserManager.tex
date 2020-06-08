@@ -1,0 +1,101 @@
+\hypertarget{classUserManager}{}\section{User\+Manager Class Reference}
+\label{classUserManager}\index{User\+Manager@{User\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUserManager_ab3d9ba3132004b92400d15af5bbcc1cb}{get} (\$id)
+\item 
+\hyperlink{classUserManager_af3f58e58e0bc214487d5ac280000c37f}{get\+All} ()
+\item 
+\hyperlink{classUserManager_a5cd4f721609a104f8b227cf9c81ab2af}{add} (\$user)
+\item 
+\hyperlink{classUserManager_a7f7c60b72d1e89fd33b6192a088b12fb}{update} (\$user)
+\item 
+\hyperlink{classUserManager_a5f459de68fa28901e912f0616beeaf5f}{delete} (\$user)
+\item 
+\hyperlink{classUserManager_a580f9418a27620a623e858881a2a181a}{login} (\$login\+Or\+Email)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classUserManager}{User\+Manager} The manager between the database and the class \hyperlink{classUser}{User} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUserManager_a5cd4f721609a104f8b227cf9c81ab2af}\label{classUserManager_a5cd4f721609a104f8b227cf9c81ab2af}} 
+\index{User\+Manager@{User\+Manager}!add@{add}}
+\index{add@{add}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily User\+Manager\+::add (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Adds a new \hyperlink{classUser}{User} in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} & {\em \$user} & the user to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the unique id given by the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUserManager_a5f459de68fa28901e912f0616beeaf5f}\label{classUserManager_a5f459de68fa28901e912f0616beeaf5f}} 
+\index{User\+Manager@{User\+Manager}!delete@{delete}}
+\index{delete@{delete}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily User\+Manager\+::delete (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Deletes an existing user from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUserManager_ab3d9ba3132004b92400d15af5bbcc1cb}\label{classUserManager_ab3d9ba3132004b92400d15af5bbcc1cb}} 
+\index{User\+Manager@{User\+Manager}!get@{get}}
+\index{get@{get}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily User\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Returns the user with his id from the database 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & the user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUserManager_af3f58e58e0bc214487d5ac280000c37f}\label{classUserManager_af3f58e58e0bc214487d5ac280000c37f}} 
+\index{User\+Manager@{User\+Manager}!get\+All@{get\+All}}
+\index{get\+All@{get\+All}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{get\+All()}{getAll()}}
+{\footnotesize\ttfamily User\+Manager\+::get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns all the users from the database \begin{DoxyReturn}{Returns}
+array all the existing users in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUserManager_a580f9418a27620a623e858881a2a181a}\label{classUserManager_a580f9418a27620a623e858881a2a181a}} 
+\index{User\+Manager@{User\+Manager}!login@{login}}
+\index{login@{login}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily User\+Manager\+::login (\begin{DoxyParamCaption}\item[{}]{\$login\+Or\+Email }\end{DoxyParamCaption})}
+
+Returns the user with the associated login or email address. used for connection time. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login\+Or\+Email} & the login or the email address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User$\vert$null the user associated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUserManager_a7f7c60b72d1e89fd33b6192a088b12fb}\label{classUserManager_a7f7c60b72d1e89fd33b6192a088b12fb}} 
+\index{User\+Manager@{User\+Manager}!update@{update}}
+\index{update@{update}!User\+Manager@{User\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily User\+Manager\+::update (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Updates an existing user int the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} & {\em \$user} & the user to update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/managers/User\+Manager.\+class.\+php\end{DoxyCompactItemize}

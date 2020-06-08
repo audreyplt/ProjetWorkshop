@@ -1,0 +1,62 @@
+\hypertarget{classFavoriteManager}{}\section{Favorite\+Manager Class Reference}
+\label{classFavoriteManager}\index{Favorite\+Manager@{Favorite\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFavoriteManager_af4d938bf8179aa4bde12a14ff1ad7e63}{get} (\$user)
+\item 
+\hyperlink{classFavoriteManager_a738fa8c7d17f1ba98fc48261d3e383d7}{add} (\$user, \$template)
+\item 
+\hyperlink{classFavoriteManager_a8862a7640ccfbba0bde3db812d75c305}{delete} (\$user, \$template)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classFavoriteManager}{Favorite\+Manager} The manager between the database and the user\textquotesingle{}s favorites templates 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFavoriteManager_a738fa8c7d17f1ba98fc48261d3e383d7}\label{classFavoriteManager_a738fa8c7d17f1ba98fc48261d3e383d7}} 
+\index{Favorite\+Manager@{Favorite\+Manager}!add@{add}}
+\index{add@{add}!Favorite\+Manager@{Favorite\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Favorite\+Manager\+::add (\begin{DoxyParamCaption}\item[{}]{\$user,  }\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Adds a new favorite association in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the associated user \\
+\hline
+\hyperlink{classTemplate}{Template} & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFavoriteManager_a8862a7640ccfbba0bde3db812d75c305}\label{classFavoriteManager_a8862a7640ccfbba0bde3db812d75c305}} 
+\index{Favorite\+Manager@{Favorite\+Manager}!delete@{delete}}
+\index{delete@{delete}!Favorite\+Manager@{Favorite\+Manager}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Favorite\+Manager\+::delete (\begin{DoxyParamCaption}\item[{}]{\$user,  }\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Deletes a favorite association from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the associated user \\
+\hline
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFavoriteManager_af4d938bf8179aa4bde12a14ff1ad7e63}\label{classFavoriteManager_af4d938bf8179aa4bde12a14ff1ad7e63}} 
+\index{Favorite\+Manager@{Favorite\+Manager}!get@{get}}
+\index{get@{get}!Favorite\+Manager@{Favorite\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Favorite\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Returns a array of user\textquotesingle{}s favorite \hyperlink{classTemplate}{Template} 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user associated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the array of user\textquotesingle{}s favorites \hyperlink{classTemplate}{Template} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/managers/Favorite\+Manager.\+class.\+php\end{DoxyCompactItemize}

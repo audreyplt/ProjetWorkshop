@@ -1,0 +1,472 @@
+\hypertarget{classSuperManager}{}\section{Super\+Manager Class Reference}
+\label{classSuperManager}\index{Super\+Manager@{Super\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSuperManager_a6a3faf8b26e39f4aa770f089b79b16cf}{get\+User} (\$id)
+\item 
+\hyperlink{classSuperManager_a1d13928519ef298511689f791ee20f47}{get\+All\+Users} ()
+\item 
+\hyperlink{classSuperManager_a36f1355d1470e77499029fb5c6f56c2f}{add\+User} (\$user)
+\item 
+\hyperlink{classSuperManager_a63a861b2c5f5ada719d52cf5cd2c0456}{update\+User} (\$user)
+\item 
+\hyperlink{classSuperManager_a64aafcafe1766f790b153795a17cca31}{delete\+User} (\$user)
+\item 
+\hyperlink{classSuperManager_a23df055dc5d05de1826ca6b410412e1a}{login\+User} (\$login\+Or\+Email)
+\item 
+\hyperlink{classSuperManager_a893c2c2ec7efa813fb38fcd6dfa4e91f}{get\+Template} (\$ref, \$type)
+\item 
+\hyperlink{classSuperManager_a2d46a844089eaf6ddf7d834847cae4b4}{get\+Templates\+Type} (\$type)
+\item 
+\hyperlink{classSuperManager_ae7029ae4b0db353b9be8088bc30647eb}{get\+Templates\+Filtered} (\$type, \$keywords, \$topics, \$rate\+Min, \$formats, \$sizes)
+\item 
+\hyperlink{classSuperManager_a2815b1d6986d42f6581c48460df37b7f}{get\+All\+Templates} ()
+\item 
+\hyperlink{classSuperManager_a4afbfc75b1ee34099199da2fa0915c0e}{add\+Template} (\$template)
+\item 
+\hyperlink{classSuperManager_a28caeb179b7e020bbfec742abdeae1df}{update\+Template} (\$template)
+\item 
+\hyperlink{classSuperManager_a2d701d156bcaa8d6fa546210469541fb}{delete\+Template} (\$template)
+\item 
+\hyperlink{classSuperManager_ae16e3a2d6fd7f0cca136eb75ea4c8d49}{get\+Rate} (\$template)
+\item 
+\hyperlink{classSuperManager_ae96f4d649dbdcff2d160150b32aefea6}{add\+Rate} (\$rate)
+\item 
+\hyperlink{classSuperManager_a15ec9cb9abd7c588206f8a81d78d282e}{update\+Rate} (\$rate)
+\item 
+\hyperlink{classSuperManager_af5bffd1255bd599146767d7a1c6f44fa}{delete\+Rate} (\$rate)
+\item 
+\hyperlink{classSuperManager_a8ca540bb9bc9a9afc4914d93288a4fb3}{get\+Commentary} (\$ref)
+\item 
+\hyperlink{classSuperManager_a71ce25db0a1b54bb4daee8ef9db22f0d}{get\+Commentaries} (\$template)
+\item 
+\hyperlink{classSuperManager_a4d35255f704358ecbf1ea32ab632952a}{add\+Commentary} (\$commentary)
+\item 
+\hyperlink{classSuperManager_afc109268bb8e48b702cf507fa6f17133}{update\+Commentary} (\$commentary)
+\item 
+\hyperlink{classSuperManager_aa872d42f3b00783f14cc6d9729f82372}{delete\+Commentary} (\$commentary)
+\item 
+\hyperlink{classSuperManager_a44ae73fb70303a49408182d4e43e7bf6}{get\+Favorites} (\$user)
+\item 
+\hyperlink{classSuperManager_a6a9c33259590b2be5d43a9aa99bd3116}{add\+Favorite} (\$user, \$template)
+\item 
+\hyperlink{classSuperManager_addca4600732dc62d5210a4cdfd08bd29}{delete\+Favorite} (\$user, \$template)
+\item 
+\hyperlink{classSuperManager_a9d9e312e8f4f4c105b619c37cfe05908}{get\+Tag} (\$template)
+\item 
+\hyperlink{classSuperManager_a3f6f650d38f315c2326255fdb8f80c20}{add\+Tag} (\$template, \$tag)
+\item 
+\hyperlink{classSuperManager_ac8addd12cd4018e09543c6f7eca23bb4}{delete\+Tag} (\$template, \$tag)
+\item 
+\hyperlink{classSuperManager_afbf253681e05119eb1eca99adf0a9f54}{get\+All\+Badges} ()
+\item 
+\hyperlink{classSuperManager_aad2062dca6a3577a9d852c4edf9b1189}{get\+User\+Badges} (\$user)
+\item 
+\hyperlink{classSuperManager_af5a189e3061acbf92dc040183b4eaefc}{get\+Badges\+Non\+Obtained} (\$user)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classSuperManager}{Super\+Manager} the manager of all other managers. It is through him and only through him that the controler part passes to get data from the database 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSuperManager_a4d35255f704358ecbf1ea32ab632952a}\label{classSuperManager_a4d35255f704358ecbf1ea32ab632952a}} 
+\index{Super\+Manager@{Super\+Manager}!add\+Commentary@{add\+Commentary}}
+\index{add\+Commentary@{add\+Commentary}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+Commentary()}{addCommentary()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+Commentary (\begin{DoxyParamCaption}\item[{}]{\$commentary }\end{DoxyParamCaption})}
+
+Adds a new \hyperlink{classCommentary}{Commentary} in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classCommentary}{Commentary} & {\em \$commentary} & the new commentary to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a6a9c33259590b2be5d43a9aa99bd3116}\label{classSuperManager_a6a9c33259590b2be5d43a9aa99bd3116}} 
+\index{Super\+Manager@{Super\+Manager}!add\+Favorite@{add\+Favorite}}
+\index{add\+Favorite@{add\+Favorite}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+Favorite()}{addFavorite()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+Favorite (\begin{DoxyParamCaption}\item[{}]{\$user,  }\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Adds a new favorite association in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the associated user \\
+\hline
+\hyperlink{classTemplate}{Template} & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_ae96f4d649dbdcff2d160150b32aefea6}\label{classSuperManager_ae96f4d649dbdcff2d160150b32aefea6}} 
+\index{Super\+Manager@{Super\+Manager}!add\+Rate@{add\+Rate}}
+\index{add\+Rate@{add\+Rate}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+Rate()}{addRate()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+Rate (\begin{DoxyParamCaption}\item[{}]{\$rate }\end{DoxyParamCaption})}
+
+Adds a new \hyperlink{classRate}{Rate} in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classRate}{Rate} & {\em \$rate} & the rate to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a3f6f650d38f315c2326255fdb8f80c20}\label{classSuperManager_a3f6f650d38f315c2326255fdb8f80c20}} 
+\index{Super\+Manager@{Super\+Manager}!add\+Tag@{add\+Tag}}
+\index{add\+Tag@{add\+Tag}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+Tag()}{addTag()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+Tag (\begin{DoxyParamCaption}\item[{}]{\$template,  }\item[{}]{\$tag }\end{DoxyParamCaption})}
+
+Adds a new tag for a template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+string & {\em \$tag} & the tag to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a4afbfc75b1ee34099199da2fa0915c0e}\label{classSuperManager_a4afbfc75b1ee34099199da2fa0915c0e}} 
+\index{Super\+Manager@{Super\+Manager}!add\+Template@{add\+Template}}
+\index{add\+Template@{add\+Template}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+Template()}{addTemplate()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+Template (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Add a new template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} & {\em \$template} & the template to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a36f1355d1470e77499029fb5c6f56c2f}\label{classSuperManager_a36f1355d1470e77499029fb5c6f56c2f}} 
+\index{Super\+Manager@{Super\+Manager}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{add\+User()}{addUser()}}
+{\footnotesize\ttfamily Super\+Manager\+::add\+User (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Adds a new user in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} & {\em \$user} & the user to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_aa872d42f3b00783f14cc6d9729f82372}\label{classSuperManager_aa872d42f3b00783f14cc6d9729f82372}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+Commentary@{delete\+Commentary}}
+\index{delete\+Commentary@{delete\+Commentary}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Commentary()}{deleteCommentary()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+Commentary (\begin{DoxyParamCaption}\item[{}]{\$commentary }\end{DoxyParamCaption})}
+
+Deletes an existing commentary from the database 
+\begin{DoxyParams}[1]{Parameters}
+int | \hyperlink{classCommentary}{Commentary} & {\em \$commentary} & the commentary to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_addca4600732dc62d5210a4cdfd08bd29}\label{classSuperManager_addca4600732dc62d5210a4cdfd08bd29}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+Favorite@{delete\+Favorite}}
+\index{delete\+Favorite@{delete\+Favorite}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Favorite()}{deleteFavorite()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+Favorite (\begin{DoxyParamCaption}\item[{}]{\$user,  }\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Deletes a favorite association from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the associated user \\
+\hline
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_af5bffd1255bd599146767d7a1c6f44fa}\label{classSuperManager_af5bffd1255bd599146767d7a1c6f44fa}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+Rate@{delete\+Rate}}
+\index{delete\+Rate@{delete\+Rate}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Rate()}{deleteRate()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+Rate (\begin{DoxyParamCaption}\item[{}]{\$rate }\end{DoxyParamCaption})}
+
+Delete an existing \hyperlink{classRate}{Rate} from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classRate}{Rate} & {\em \$rate} & the rate to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_ac8addd12cd4018e09543c6f7eca23bb4}\label{classSuperManager_ac8addd12cd4018e09543c6f7eca23bb4}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+Tag@{delete\+Tag}}
+\index{delete\+Tag@{delete\+Tag}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Tag()}{deleteTag()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+Tag (\begin{DoxyParamCaption}\item[{}]{\$template,  }\item[{}]{\$tag }\end{DoxyParamCaption})}
+
+Deletes an existing template\textquotesingle{}s tag from the database 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Template\mbox{[}int} & \$template the associated template \\
+\hline
+string & {\em \$tag} & the tag to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a2d701d156bcaa8d6fa546210469541fb}\label{classSuperManager_a2d701d156bcaa8d6fa546210469541fb}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+Template@{delete\+Template}}
+\index{delete\+Template@{delete\+Template}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Template()}{deleteTemplate()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+Template (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Deletes an existing template from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the template to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a64aafcafe1766f790b153795a17cca31}\label{classSuperManager_a64aafcafe1766f790b153795a17cca31}} 
+\index{Super\+Manager@{Super\+Manager}!delete\+User@{delete\+User}}
+\index{delete\+User@{delete\+User}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{delete\+User()}{deleteUser()}}
+{\footnotesize\ttfamily Super\+Manager\+::delete\+User (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Deletes the corresponding customer from the DB. 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_afbf253681e05119eb1eca99adf0a9f54}\label{classSuperManager_afbf253681e05119eb1eca99adf0a9f54}} 
+\index{Super\+Manager@{Super\+Manager}!get\+All\+Badges@{get\+All\+Badges}}
+\index{get\+All\+Badges@{get\+All\+Badges}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+All\+Badges()}{getAllBadges()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+All\+Badges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all the badges stored in the database \begin{DoxyReturn}{Returns}
+array the badges stored in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a2815b1d6986d42f6581c48460df37b7f}\label{classSuperManager_a2815b1d6986d42f6581c48460df37b7f}} 
+\index{Super\+Manager@{Super\+Manager}!get\+All\+Templates@{get\+All\+Templates}}
+\index{get\+All\+Templates@{get\+All\+Templates}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+All\+Templates()}{getAllTemplates()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+All\+Templates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all the templates from the database \begin{DoxyReturn}{Returns}
+array all the templates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a1d13928519ef298511689f791ee20f47}\label{classSuperManager_a1d13928519ef298511689f791ee20f47}} 
+\index{Super\+Manager@{Super\+Manager}!get\+All\+Users@{get\+All\+Users}}
+\index{get\+All\+Users@{get\+All\+Users}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+All\+Users()}{getAllUsers()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets all users from the DB. \begin{DoxyReturn}{Returns}
+array the users 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_af5a189e3061acbf92dc040183b4eaefc}\label{classSuperManager_af5a189e3061acbf92dc040183b4eaefc}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Badges\+Non\+Obtained@{get\+Badges\+Non\+Obtained}}
+\index{get\+Badges\+Non\+Obtained@{get\+Badges\+Non\+Obtained}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Badges\+Non\+Obtained()}{getBadgesNonObtained()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Badges\+Non\+Obtained (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Returns the badges N\+OT obtained by the user from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user associated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the badges N\+OT obtained by the user from the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a71ce25db0a1b54bb4daee8ef9db22f0d}\label{classSuperManager_a71ce25db0a1b54bb4daee8ef9db22f0d}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Commentaries@{get\+Commentaries}}
+\index{get\+Commentaries@{get\+Commentaries}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Commentaries()}{getCommentaries()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Commentaries (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Returns all \hyperlink{classCommentary}{Commentary} associated with the template 
+\begin{DoxyParams}[1]{Parameters}
+int | \hyperlink{classTemplate}{Template} & {\em \$template} & the template associated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array array of \hyperlink{classCommentary}{Commentary} associated with the template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a8ca540bb9bc9a9afc4914d93288a4fb3}\label{classSuperManager_a8ca540bb9bc9a9afc4914d93288a4fb3}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Commentary@{get\+Commentary}}
+\index{get\+Commentary@{get\+Commentary}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Commentary()}{getCommentary()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Commentary (\begin{DoxyParamCaption}\item[{}]{\$ref }\end{DoxyParamCaption})}
+
+Returns a new instance of \hyperlink{classCommentary}{Commentary} from its reference 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$ref} & the commentary\textquotesingle{}s unique reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Commentary$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a44ae73fb70303a49408182d4e43e7bf6}\label{classSuperManager_a44ae73fb70303a49408182d4e43e7bf6}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Favorites@{get\+Favorites}}
+\index{get\+Favorites@{get\+Favorites}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Favorites()}{getFavorites()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Favorites (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Returns a array of user\textquotesingle{}s favorite \hyperlink{classTemplate}{Template} 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user associated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the array of user\textquotesingle{}s favorites \hyperlink{classTemplate}{Template} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_ae16e3a2d6fd7f0cca136eb75ea4c8d49}\label{classSuperManager_ae16e3a2d6fd7f0cca136eb75ea4c8d49}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Rate@{get\+Rate}}
+\index{get\+Rate@{get\+Rate}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Rate()}{getRate()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Rate (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Returns the rates associated with the template 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the rates associated with the template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a9d9e312e8f4f4c105b619c37cfe05908}\label{classSuperManager_a9d9e312e8f4f4c105b619c37cfe05908}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Tag@{get\+Tag}}
+\index{get\+Tag@{get\+Tag}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Tag()}{getTag()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Tag (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Returns all the tags associated with the template 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the tags associated with the template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a893c2c2ec7efa813fb38fcd6dfa4e91f}\label{classSuperManager_a893c2c2ec7efa813fb38fcd6dfa4e91f}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Template@{get\+Template}}
+\index{get\+Template@{get\+Template}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Template()}{getTemplate()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Template (\begin{DoxyParamCaption}\item[{}]{\$ref,  }\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Gets the template from his reference and his type. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$ref} & the template\textquotesingle{}s reference \\
+\hline
+string & {\em \$type} & the template\textquotesingle{}s type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Template$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_ae7029ae4b0db353b9be8088bc30647eb}\label{classSuperManager_ae7029ae4b0db353b9be8088bc30647eb}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Templates\+Filtered@{get\+Templates\+Filtered}}
+\index{get\+Templates\+Filtered@{get\+Templates\+Filtered}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Templates\+Filtered()}{getTemplatesFiltered()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Templates\+Filtered (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$keywords,  }\item[{}]{\$topics,  }\item[{}]{\$rate\+Min,  }\item[{}]{\$formats,  }\item[{}]{\$sizes }\end{DoxyParamCaption})}
+
+Filtering\+: Returns the templates respecting the different criteria in arguments 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the template\textquotesingle{}s type \\
+\hline
+array & {\em \$keywords} & array for the name search \\
+\hline
+array & {\em \$topics} & restriction on topics \\
+\hline
+float & {\em \$rate\+Min} & restriction on the minimal rate \\
+\hline
+array & {\em \$formats} & restriction on the template\textquotesingle{}s format \\
+\hline
+array & {\em \$sizes} & restriction on the size\textquotesingle{}s format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the templates respecting the different criteria in arguments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a2d46a844089eaf6ddf7d834847cae4b4}\label{classSuperManager_a2d46a844089eaf6ddf7d834847cae4b4}} 
+\index{Super\+Manager@{Super\+Manager}!get\+Templates\+Type@{get\+Templates\+Type}}
+\index{get\+Templates\+Type@{get\+Templates\+Type}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+Templates\+Type()}{getTemplatesType()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+Templates\+Type (\begin{DoxyParamCaption}\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Gets all templates of specified type from the DB. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the template\textquotesingle{}s type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the templates of the specified type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a6a3faf8b26e39f4aa770f089b79b16cf}\label{classSuperManager_a6a3faf8b26e39f4aa770f089b79b16cf}} 
+\index{Super\+Manager@{Super\+Manager}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+User (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Gets the user from his id. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & the user\textquotesingle{}s unique id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_aad2062dca6a3577a9d852c4edf9b1189}\label{classSuperManager_aad2062dca6a3577a9d852c4edf9b1189}} 
+\index{Super\+Manager@{Super\+Manager}!get\+User\+Badges@{get\+User\+Badges}}
+\index{get\+User\+Badges@{get\+User\+Badges}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{get\+User\+Badges()}{getUserBadges()}}
+{\footnotesize\ttfamily Super\+Manager\+::get\+User\+Badges (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Returns the badges obtained by the user from the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} | int & {\em \$user} & the user associated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the badges obtained by the user from the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_a23df055dc5d05de1826ca6b410412e1a}\label{classSuperManager_a23df055dc5d05de1826ca6b410412e1a}} 
+\index{Super\+Manager@{Super\+Manager}!login\+User@{login\+User}}
+\index{login\+User@{login\+User}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{login\+User()}{loginUser()}}
+{\footnotesize\ttfamily Super\+Manager\+::login\+User (\begin{DoxyParamCaption}\item[{}]{\$login\+Or\+Email }\end{DoxyParamCaption})}
+
+Returns the user with the associated login or email address. used for connection time. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login\+Or\+Email} & the login or the email address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuperManager_afc109268bb8e48b702cf507fa6f17133}\label{classSuperManager_afc109268bb8e48b702cf507fa6f17133}} 
+\index{Super\+Manager@{Super\+Manager}!update\+Commentary@{update\+Commentary}}
+\index{update\+Commentary@{update\+Commentary}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{update\+Commentary()}{updateCommentary()}}
+{\footnotesize\ttfamily Super\+Manager\+::update\+Commentary (\begin{DoxyParamCaption}\item[{}]{\$commentary }\end{DoxyParamCaption})}
+
+Updates an existing commentary in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classCommentary}{Commentary} & {\em \$commentary} & the commentary to update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a15ec9cb9abd7c588206f8a81d78d282e}\label{classSuperManager_a15ec9cb9abd7c588206f8a81d78d282e}} 
+\index{Super\+Manager@{Super\+Manager}!update\+Rate@{update\+Rate}}
+\index{update\+Rate@{update\+Rate}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{update\+Rate()}{updateRate()}}
+{\footnotesize\ttfamily Super\+Manager\+::update\+Rate (\begin{DoxyParamCaption}\item[{}]{\$rate }\end{DoxyParamCaption})}
+
+Updates an existing \hyperlink{classRate}{Rate} in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classRate}{Rate} & {\em \$rate} & the rate to update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a28caeb179b7e020bbfec742abdeae1df}\label{classSuperManager_a28caeb179b7e020bbfec742abdeae1df}} 
+\index{Super\+Manager@{Super\+Manager}!update\+Template@{update\+Template}}
+\index{update\+Template@{update\+Template}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{update\+Template()}{updateTemplate()}}
+{\footnotesize\ttfamily Super\+Manager\+::update\+Template (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Updates an existing template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSuperManager_a63a861b2c5f5ada719d52cf5cd2c0456}\label{classSuperManager_a63a861b2c5f5ada719d52cf5cd2c0456}} 
+\index{Super\+Manager@{Super\+Manager}!update\+User@{update\+User}}
+\index{update\+User@{update\+User}!Super\+Manager@{Super\+Manager}}
+\subsubsection{\texorpdfstring{update\+User()}{updateUser()}}
+{\footnotesize\ttfamily Super\+Manager\+::update\+User (\begin{DoxyParamCaption}\item[{}]{\$user }\end{DoxyParamCaption})}
+
+Updates the corresponding user in the DB. 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classUser}{User} & {\em \$user} & the user to update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/managers/Super\+Manager.\+class.\+php\end{DoxyCompactItemize}

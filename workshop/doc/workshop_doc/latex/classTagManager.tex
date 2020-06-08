@@ -1,0 +1,62 @@
+\hypertarget{classTagManager}{}\section{Tag\+Manager Class Reference}
+\label{classTagManager}\index{Tag\+Manager@{Tag\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTagManager_a74190058a02edc2a58f5b99b7c3c3f1e}{get} (\$template)
+\item 
+\hyperlink{classTagManager_ab730f2638d8f4ce1b1c8d1f8c1fcd05c}{add} (\$template, \$tag)
+\item 
+\hyperlink{classTagManager_a275f32ab45be84736ee9c101e133bafe}{delete} (\$template, \$tag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classTagManager}{Tag\+Manager} The manager between the database and the template\textquotesingle{}s tags 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTagManager_ab730f2638d8f4ce1b1c8d1f8c1fcd05c}\label{classTagManager_ab730f2638d8f4ce1b1c8d1f8c1fcd05c}} 
+\index{Tag\+Manager@{Tag\+Manager}!add@{add}}
+\index{add@{add}!Tag\+Manager@{Tag\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Tag\+Manager\+::add (\begin{DoxyParamCaption}\item[{}]{\$template,  }\item[{}]{\$tag }\end{DoxyParamCaption})}
+
+Adds a new tag for a template in the database 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+string & {\em \$tag} & the tag to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTagManager_a275f32ab45be84736ee9c101e133bafe}\label{classTagManager_a275f32ab45be84736ee9c101e133bafe}} 
+\index{Tag\+Manager@{Tag\+Manager}!delete@{delete}}
+\index{delete@{delete}!Tag\+Manager@{Tag\+Manager}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Tag\+Manager\+::delete (\begin{DoxyParamCaption}\item[{}]{\$template,  }\item[{}]{\$tag }\end{DoxyParamCaption})}
+
+Deletes an existing template\textquotesingle{}s tag from the database 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Template\mbox{[}int} & \$template the associated template \\
+\hline
+string & {\em \$tag} & the tag to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTagManager_a74190058a02edc2a58f5b99b7c3c3f1e}\label{classTagManager_a74190058a02edc2a58f5b99b7c3c3f1e}} 
+\index{Tag\+Manager@{Tag\+Manager}!get@{get}}
+\index{get@{get}!Tag\+Manager@{Tag\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Tag\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Returns all the tags associated with the template 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTemplate}{Template} | int & {\em \$template} & the associated template \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the tags associated with the template 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/managers/Tag\+Manager.\+class.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{classDAO}{}\section{D\+AO Class Reference}
+\label{classDAO}\index{D\+AO@{D\+AO}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classDAO_a5baadea802b2521c1e1db8fbe91ec7f1}{get\+DB} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classDAO_ae704b593e564a267bd5b2270387407cb}{A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE} = \textquotesingle{}pw\+\_\+album\+\_\+template\textquotesingle{}
+\item 
+const \hyperlink{classDAO_addd0b43ac0cf96e7df1db712042a3191}{A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID} = 2
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+templates\+Tables}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classDAO}{D\+AO} The manager between P\+HP and My\+S\+QL 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDAO_a5baadea802b2521c1e1db8fbe91ec7f1}\label{classDAO_a5baadea802b2521c1e1db8fbe91ec7f1}} 
+\index{D\+AO@{D\+AO}!get\+DB@{get\+DB}}
+\index{get\+DB@{get\+DB}!D\+AO@{D\+AO}}
+\subsubsection{\texorpdfstring{get\+D\+B()}{getDB()}}
+{\footnotesize\ttfamily static D\+A\+O\+::get\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unique P\+DO instance \begin{DoxyReturn}{Returns}
+P\+DO the unique P\+DO instance 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDAO_a7de31f347fbed3335236462be10c019f}\label{classDAO_a7de31f347fbed3335236462be10c019f}} 
+\index{D\+AO@{D\+AO}!\$\+\_\+templates\+Tables@{\$\+\_\+templates\+Tables}}
+\index{\$\+\_\+templates\+Tables@{\$\+\_\+templates\+Tables}!D\+AO@{D\+AO}}
+\subsubsection{\texorpdfstring{\$\+\_\+templates\+Tables}{$\_templatesTables}}
+{\footnotesize\ttfamily D\+A\+O\+::\$\+\_\+templates\+Tables\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+    self::ALBUM\_TEMPLATE,
+    
+  )
+\end{DoxyCode}
+\mbox{\Hypertarget{classDAO_ae704b593e564a267bd5b2270387407cb}\label{classDAO_ae704b593e564a267bd5b2270387407cb}} 
+\index{D\+AO@{D\+AO}!A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE@{A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE}}
+\index{A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE@{A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE}!D\+AO@{D\+AO}}
+\subsubsection{\texorpdfstring{A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE}{ALBUM\_TEMPLATE}}
+{\footnotesize\ttfamily const D\+A\+O\+::\+A\+L\+B\+U\+M\+\_\+\+T\+E\+M\+P\+L\+A\+TE = \textquotesingle{}pw\+\_\+album\+\_\+template\textquotesingle{}}
+
+string the table that gathers the data exclusive to album templates \mbox{\Hypertarget{classDAO_addd0b43ac0cf96e7df1db712042a3191}\label{classDAO_addd0b43ac0cf96e7df1db712042a3191}} 
+\index{D\+AO@{D\+AO}!A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID@{A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID}}
+\index{A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID@{A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID}!D\+AO@{D\+AO}}
+\subsubsection{\texorpdfstring{A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID}{ANONYMOUS\_ID}}
+{\footnotesize\ttfamily const D\+A\+O\+::\+A\+N\+O\+N\+Y\+M\+O\+U\+S\+\_\+\+ID = 2}
+
+the unique id of the anonymous user. It is the one that collects orphaned templates when a user with public templates is deleted from the Workshop. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photoweb\+\_\+\+V2\+\_\+30-\/12-\/18/model/D\+A\+O.\+class.\+php\end{DoxyCompactItemize}
